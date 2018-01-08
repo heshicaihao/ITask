@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:paddingBottom="@dimen/DIMEN_15PX"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_70PX"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:layout_marginTop="@dimen/DIMEN_15PX"
+        android:background="@color/t_fcfcfc"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_title_note_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_26PX"
+            android:text="会议纪要"
+            android:textColor="@color/t_5ECEF0"
+            android:textSize="@dimen/DIMEN_40PX" />
+
+        <TextView
+            android:id="@+id/tv_time_note_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:text="2014-01-03 11:00"
+            android:textColor="@color/t_9f9fa3"
+            android:textSize="@dimen/DIMEN_32PX" />
+    </RelativeLayout>
+
+    <View
+        style="@style/view_for_line"
+        android:layout_height="@dimen/DIMEN_2PX"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:layout_marginTop="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:background="@color/t_fcfcfc"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_context_note_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:layout_marginTop="@dimen/DIMEN_15PX"
+            android:text="细化工作" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_15PX"
+            android:layout_marginTop="@dimen/DIMEN_20PX" >
+
+            <ImageView
+                android:id="@+id/iv_img1_note_item"
+                android:layout_width="@dimen/DIMEN_200PX"
+                android:layout_height="@dimen/DIMEN_180PX"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                android:src="@drawable/bg_titlebar"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_img2_note_item"
+                android:layout_width="@dimen/DIMEN_200PX"
+                android:layout_height="@dimen/DIMEN_180PX"
+                android:layout_centerInParent="true"
+                android:src="@drawable/bg_titlebar"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_img3_note_item"
+                android:layout_width="@dimen/DIMEN_200PX"
+                android:layout_height="@dimen/DIMEN_180PX"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/DIMEN_10PX"
+                android:src="@drawable/bg_titlebar"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_total_note_item"
+                android:layout_width="@dimen/DIMEN_200PX"
+                android:layout_height="@dimen/DIMEN_180PX"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/DIMEN_20PX"
+                android:gravity="center_vertical"
+                android:text="(30)"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/DIMEN_15PX"
+            android:orientation="vertical" >
+
+            <com.devsmart.android.ui.HorizontalListView
+                android:id="@+id/lv_voice_note_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/DIMEN_200PX"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

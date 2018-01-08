@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/unused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#54C7FC" >
+
+        <TextView
+            android:id="@+id/tv_cancle_note_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/clear"
+            android:textColor="@drawable/text_selector"
+            android:textSize="@dimen/DIMEN_30PX" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/note_detail_tile"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <TextView
+            android:id="@+id/tv_save_note_eidt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/save"
+            android:textColor="@drawable/text_selector"
+            android:textSize="@dimen/DIMEN_30PX" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/tv_title_note_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_18PX"
+            android:layout_marginLeft="@dimen/DIMEN_26PX"
+            android:layout_marginTop="@dimen/DIMEN_18PX"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/mtll_adt_lately_share_page_no_cur"
+            android:drawablePadding="@dimen/DIMEN_10PX"
+            android:inputType="textMultiLine"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:text="日志标题:会议纪要"
+            android:textColor="@color/bg_zongse"
+            android:textSize="@dimen/DIMEN_35PX" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_2PX"
+            android:background="@color/gray_nomal" />
+
+        <EditText
+            android:id="@+id/tv_content_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_18PX"
+            android:layout_marginLeft="@dimen/DIMEN_26PX"
+            android:layout_marginRight="@dimen/DIMEN_26PX"
+            android:layout_marginTop="@dimen/DIMEN_18PX"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/mtll_adt_lately_share_page_no_cur"
+            android:drawablePadding="@dimen/DIMEN_10PX"
+            android:inputType="textMultiLine"
+            android:maxLength="180"
+            android:text="日志详情:会议纪要会议纪要会议纪要会议纪要会议纪要会议纪要会议纪要会议纪要会议纪要会议纪要会议纪要会议纪要会议纪要会议纪要会议纪要"
+            android:textColor="@color/bg_zongse"
+            android:textSize="@dimen/DIMEN_35PX" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_18PX"
+            android:layout_marginLeft="@dimen/DIMEN_26PX"
+            android:layout_marginRight="@dimen/DIMEN_26PX"
+            android:layout_marginTop="@dimen/DIMEN_18PX"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mtll_adt_lately_share_page_no_cur"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_10PX"
+                android:background="@drawable/common_btn_gray_normal"
+                android:gravity="center"
+                android:id="@+id/voice_play"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/voice_icon"
+                    android:background="@drawable/voice_blue_3"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_10PX"
+                    android:gravity="center"
+                    android:id="@+id/voice_time"
+                    android:text="     20&apos;&apos;"
+                    android:textColor="@color/bg_zongse"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/close_normal"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/grid_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_26PX"
+            android:layout_marginRight="@dimen/DIMEN_26PX"
+            android:background="@color/gray_1"
+            android:horizontalSpacing="@dimen/DIMEN_8PX"
+            android:listSelector="#ffffffff"
+            android:numColumns="3"
+            android:scrollbars="@null"
+            android:verticalSpacing="@dimen/DIMEN_8PX" >
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

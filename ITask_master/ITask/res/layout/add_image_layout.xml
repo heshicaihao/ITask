@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/DIMEN_60PX">
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/DIMEN_60PX"
+	    android:background="@drawable/home_task_item_selector"/>
+    <ImageButton
+        android:id="@+id/add_btn"
+        android:layout_width="@dimen/DIMEN_45PX"
+        android:layout_height="@dimen/DIMEN_45PX"
+        android:scaleType="fitCenter"
+        android:contentDescription="@null"
+        android:src="@drawable/add_task_selector" 
+        android:background="#0000"
+        android:layout_gravity="center"
+        />
+
+</FrameLayout>

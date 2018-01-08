@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/DIMEN_10PX" >
+
+    <TextView
+        android:id="@+id/tv_name_allot_gvitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/DIMEN_28PX"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:singleLine="true"
+        android:maxLength="7"
+        android:drawablePadding="@dimen/DIMEN_20PX"
+        android:drawableRight="@drawable/icon_delete_1"
+        android:gravity="center"
+        android:paddingLeft="@dimen/DIMEN_10PX"
+        android:text="RRRRRR" />
+
+</LinearLayout>

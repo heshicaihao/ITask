@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/t_fcfcfc"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:gravity="center_vertical"
+        android:id="@+id/linear_item"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <ImageView
+            android:id="@+id/iv_head_context_item"
+            android:layout_width="@dimen/DIMEN_60PX"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:layout_marginBottom="@dimen/DIMEN_10PX"
+            android:layout_marginLeft="@dimen/DIMEN_10PX"
+            android:layout_marginTop="@dimen/DIMEN_10PX"
+            android:layout_weight="1"
+            android:src="@drawable/drawable" />
+
+        <TextView
+            android:id="@+id/tv_name_context_item"
+            android:layout_width="@dimen/DIMEN_120PX"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_60PX"
+            android:layout_weight="3"
+            android:text="张光亮"
+            android:textColor="@color/t_9f9fa3"
+            android:textSize="@dimen/DIMEN_34PX" />
+
+        <TextView
+            android:id="@+id/tv_phone_context_item"
+            android:layout_width="@dimen/DIMEN_120PX"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text=""
+            android:textColor="@color/t_9f9fa3"
+            android:textSize="@dimen/DIMEN_34PX" />
+
+        <ImageView
+            android:id="@+id/ib_call_context_item"
+            android:layout_width="@dimen/DIMEN_60PX"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:layout_marginRight="@dimen/DIMEN_10PX"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:src="@drawable/context_phone_btn_selector"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_choice_context_item"
+            android:layout_width="@dimen/DIMEN_60PX"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:layout_weight="1"
+            android:button="@drawable/checkbox_selector"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

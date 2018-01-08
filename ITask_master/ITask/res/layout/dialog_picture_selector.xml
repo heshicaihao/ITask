@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/DIMEN_400PX"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_bord_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/layout_bg"
+        android:background="#f2f2f2" />
+
+    <TextView
+        android:id="@+id/picture_tv_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/DIMEN_20PX"
+        android:text="@string/picture_selector"
+        android:textSize="18sp"
+        android:textColor="#267dbd" />
+
+    <TextView
+        style="@style/layout_bg"
+        android:background="#f2f2f2" />
+
+    <TextView
+        android:id="@+id/picture_tv_carema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/DIMEN_20PX"
+        android:text="@string/takepicture"
+        android:textSize="18sp"
+        android:textColor="#267dbd" />
+
+    <TextView
+        style="@style/layout_bg"
+        android:background="#f2f2f2" />
+
+    <TextView
+        android:id="@+id/picture_tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/DIMEN_20PX"
+        android:text="@string/clear"
+        android:textSize="18sp"
+        android:textColor="#267dbd" />
+
+</LinearLayout>

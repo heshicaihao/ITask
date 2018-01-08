@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:background="@drawable/bg_titlebar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/contact"
+            android:textColor="@color/t_fcfcfc"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <ImageView
+            android:id="@+id/iv_addcont_contect"
+            android:layout_width="@dimen/DIMEN_80PX"
+            android:layout_height="@dimen/DIMEN_80PX"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:clickable="true"
+            android:src="@drawable/notepad_add_btn_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:layout_margin="@dimen/DIMEN_20PX"
+        android:background="@drawable/historytask_item_shape"
+        android:padding="@dimen/DIMEN_8PX" >
+
+        <AutoCompleteTextView
+            android:id="@+id/et_search_context"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_weight="1"
+            android:ems="11"
+            android:singleLine="true" >
+        </AutoCompleteTextView>
+
+        <ImageButton
+            android:id="@+id/ib_search_context"
+            android:layout_width="@dimen/DIMEN_66PX"
+            android:layout_height="@dimen/DIMEN_66PX"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:layout_marginRight="@dimen/DIMEN_30PX"
+            android:background="@drawable/btn_search2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_yellow"
+                android:drawablePadding="@dimen/DIMEN_18PX"
+                android:drawableRight="@drawable/right_small_icon"
+                android:padding="@dimen/DIMEN_12PX"
+                android:text="@string/count_message"
+                android:textColor="@color/orange_nomal"
+                android:textSize="@dimen/DIMEN_36PX" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/gray_nomal" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scrollbars="@null" >
+
+            <RadioGroup
+                android:id="@+id/rb_user_groupname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <ListView
+            android:id="@+id/contact_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:divider="#57DAF6"
+            android:dividerHeight="@dimen/DIMEN_4PX" >
+        </ListView>
+
+        <ExpandableListView
+            android:id="@+id/ev_contact_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:childIndicatorLeft="0dp"
+            android:divider="@drawable/line_contact"
+            android:dividerHeight="@dimen/DIMEN_1PX"
+            android:groupIndicator="@null"
+            android:visibility="gone" >
+        </ExpandableListView>
+    </LinearLayout>
+
+</LinearLayout>

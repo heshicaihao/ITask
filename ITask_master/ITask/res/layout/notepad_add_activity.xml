@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/unused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#54C7FC" >
+
+        <TextView
+            android:id="@+id/tv_cancle_note_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/clear"
+            android:textColor="@drawable/text_selector"
+            android:textSize="@dimen/DIMEN_30PX" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/notebook_add"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <TextView
+            android:id="@+id/tv_save_note_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/save"
+            android:textColor="@drawable/text_selector"
+            android:textSize="@dimen/DIMEN_30PX" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_title_note_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unused"
+        android:layout_margin="@dimen/DIMEN_20PX"
+        android:background="@drawable/notepad_add_inp_selector"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/title"
+        android:lines="2"
+        android:maxLength="20"
+        android:maxLines="2"
+        android:textColor="@color/t_oooooo" >
+    </EditText>
+
+    <View
+        android:id="@+id/unused1"
+        style="@style/view_for_line"
+        android:layout_below="@id/et_title_note_add" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unused1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_context_note_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/DIMEN_20PX"
+                android:background="@drawable/notepad_add_inp_selector"
+                android:gravity="top"
+                android:hint="@string/add_context"
+                android:lines="8"
+                android:maxLines="8"
+                android:textColor="@color/t_oooooo" >
+            </EditText>
+
+            <View style="@style/view_for_line" />
+
+            <com.devsmart.android.ui.HorizontalListView
+                android:id="@+id/lv_pic_note_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/DIMEN_220PX" />
+
+            <View style="@style/view_for_line" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_330PX"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_330PX"
+                    android:orientation="horizontal" >
+
+                    <GridView
+                        android:id="@+id/gv_voice_note_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DIMEN_300PX"
+                        android:layout_margin="@dimen/DIMEN_20PX"
+                        android:columnWidth="@dimen/DIMEN_300PX"
+                        android:gravity="center_horizontal"
+                        android:horizontalSpacing="@dimen/DIMEN_10PX"
+                        android:numColumns="auto_fit"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/DIMEN_10PX" >
+                    </GridView>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:layout_alignParentBottom="true"
+        android:background="@color/t_fcfcfc" >
+
+        <ImageView
+            android:id="@+id/iv_pic_notepad_add"
+            android:layout_width="@dimen/DIMEN_60PX"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:layout_alignTop="@+id/iv_mic_notepad_add"
+            android:layout_marginLeft="@dimen/DIMEN_100PX"
+            android:clickable="true"
+            android:src="@drawable/camera_selector" />
+
+        <ImageView
+            android:id="@+id/iv_mic_notepad_add"
+            android:layout_width="@dimen/DIMEN_60PX"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:src="@drawable/mic_selector" />
+
+        <ImageView
+            android:id="@+id/iv_file_notepad_add"
+            android:layout_width="@dimen/DIMEN_60PX"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/iv_mic_notepad_add"
+            android:layout_marginRight="@dimen/DIMEN_100PX"
+            android:clickable="true"
+            android:src="@drawable/home_attach_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

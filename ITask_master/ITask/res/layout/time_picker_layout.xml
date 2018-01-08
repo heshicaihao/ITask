@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/hour_text"
+        android:layout_width="@dimen/DIMEN_170PX"
+        android:layout_height="@dimen/DIMEN_138PX"
+        android:background="@drawable/shape_date_set_bg"
+        android:gravity="center"
+        android:text="22"
+        android:textColor="#3BBCE2"
+        android:textSize="32sp" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/DIMEN_60PX"
+        android:layout_height="@dimen/DIMEN_138PX"
+        android:layout_marginLeft="@dimen/DIMEN_5PX" >
+
+        <ImageView
+            android:id="@+id/hour_up_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:background="@drawable/date_up_selector"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/hour_down_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/date_down_selector"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/minute_text"
+        android:layout_width="@dimen/DIMEN_170PX"
+        android:layout_height="@dimen/DIMEN_138PX"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:background="@drawable/shape_date_set_bg"
+        android:gravity="center"
+        android:text="22"
+        android:textColor="#3BBCE2"
+        android:textSize="32sp" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/DIMEN_60PX"
+        android:layout_height="@dimen/DIMEN_138PX"
+        android:layout_marginLeft="@dimen/DIMEN_5PX" >
+
+        <ImageView
+            android:id="@+id/minute_up_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:background="@drawable/date_up_selector"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/minute_down_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/date_down_selector"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+</merge>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    android:orientation="vertical">
+    
+    <!-- 账号 -->
+    <LinearLayout
+        style="@style/input_layout"
+        android:layout_marginTop="@dimen/DIMEN_325PX" >
+        <ImageView 
+            style="@style/input_img"
+            android:src="@drawable/icon_mail"/>
+        <EditText 
+            android:id="@+id/user_edit"
+            style="@style/input_edit"
+            android:hint="@string/email_phone"/>
+    </LinearLayout>
+    
+    <!-- 密码 -->
+    <LinearLayout
+        style="@style/input_layout"
+        android:layout_marginTop="@dimen/DIMEN_20PX" >
+        <ImageView 
+            style="@style/input_img"
+            android:src="@drawable/icon_lock"/>
+        <EditText 
+            android:id="@+id/pwd_edit"
+            style="@style/input_edit"
+            android:inputType="textPassword"
+            android:hint="@string/input_pwd"/>
+    </LinearLayout>
+    
+    <!-- 登录 -->
+    <TextView 
+        android:id="@+id/login_tv"
+        style="@style/input_button"
+        android:layout_marginTop="@dimen/DIMEN_80PX"
+        android:text="@string/login"/>
+    
+    <!-- 注册 -->
+    <LinearLayout 
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_60PX"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/forget_pwd_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/forget_pwd"
+            android:gravity="center"/>
+        
+        <TextView 
+            android:id="@+id/sign_up_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/register"
+            android:gravity="center"/>
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/history_bg3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 标题 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_96PX"
+            android:background="@drawable/bg_1" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/DIMEN_60PX"
+                android:layout_height="@dimen/DIMEN_60PX"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/DIMEN_18PX"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                android:layout_marginTop="@dimen/DIMEN_18PX"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/DIMEN_10PX"
+                android:src="@drawable/arrow_left"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/history_task"
+                android:textColor="@color/login_title_color"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="@dimen/DIMEN_60PX"
+                android:layout_height="@dimen/DIMEN_60PX"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/DIMEN_18PX"
+                android:layout_marginRight="@dimen/DIMEN_30PX"
+                android:layout_marginTop="@dimen/DIMEN_18PX"
+                android:background="@drawable/search_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:src="@drawable/search_selector" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/search_month"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_120PX"
+            android:layout_marginBottom="@dimen/DIMEN_10PX"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_marginRight="@dimen/DIMEN_30PX"
+            android:layout_marginTop="@dimen/DIMEN_10PX"
+            android:background="@drawable/historytask_item_shape"
+            android:orientation="horizontal"
+            android:padding="@dimen/DIMEN_20PX" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_80PX"
+                android:background="@drawable/historytask_tablerow_shape"
+                android:orientation="horizontal"
+                android:padding="@dimen/DIMEN_10PX" >
+
+                <ImageView
+                    android:id="@+id/iv_reduce"
+                    android:layout_width="@dimen/DIMEN_60PX"
+                    android:layout_height="@dimen/DIMEN_60PX"
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:background="@drawable/arrow_left_selector"
+                    android:padding="@dimen/DIMEN_10PX"
+                    android:src="@drawable/arrow_left" />
+
+                <EditText
+                    android:id="@+id/et_timeMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/DIMEN_60PX"
+                    android:layout_marginLeft="@dimen/DIMEN_10PX"
+                    android:layout_marginRight="@dimen/DIMEN_10PX"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="2014-12"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="@dimen/DIMEN_60PX"
+                    android:layout_height="@dimen/DIMEN_60PX"
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:background="@drawable/arrow_left_selector"
+                    android:padding="@dimen/DIMEN_10PX"
+                    android:src="@drawable/arrow_right" />
+            </TableRow>
+
+            <ImageView
+                android:id="@+id/iv_search2"
+                android:layout_width="@dimen/DIMEN_60PX"
+                android:layout_height="@dimen/DIMEN_60PX"
+                android:layout_marginBottom="@dimen/DIMEN_10PX"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                android:layout_marginTop="@dimen/DIMEN_30PX"
+                android:src="@drawable/btn_search2"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_marginRight="@dimen/DIMEN_30PX"
+            android:background="@drawable/historytask_item_selector"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/et_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_70PX"
+                android:layout_marginLeft="@dimen/DIMEN_70PX"
+                android:layout_marginRight="@dimen/DIMEN_70PX"
+                android:background="@drawable/history_input_bg"
+                android:gravity="center|bottom"
+                android:hint="请输入关键字"
+                android:textColor="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_keyword"
+                android:orientation="horizontal"
+                android:padding="@dimen/DIMEN_20PX" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/DIMEN_60PX"
+                            android:layout_marginLeft="@dimen/DIMEN_30PX"
+                            android:text="开始时间:"
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/et_timeStart"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/DIMEN_60PX"
+                            android:layout_marginRight="@dimen/DIMEN_10PX"
+                            android:background="@color/blue_dan"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:enabled="true"
+                            android:focusable="false"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="@dimen/DIMEN_20PX"
+                            android:singleLine="true"
+                            android:text="2014-01-01"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_start"
+                        android:layout_marginTop="@dimen/DIMEN_10PX"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/DIMEN_60PX"
+                            android:layout_marginLeft="@dimen/DIMEN_30PX"
+                            android:text="结束时间:"
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/et_timeEnd"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/DIMEN_60PX"
+                            android:layout_marginRight="@dimen/DIMEN_10PX"
+                            android:background="@color/blue_dan"
+                            android:clickable="true"
+                            android:editable="false"
+                            android:enabled="true"
+                            android:focusable="false"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="@dimen/DIMEN_20PX"
+                            android:singleLine="true"
+                            android:text="2014-03-06"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_search_do"
+                    android:layout_width="@dimen/DIMEN_150PX"
+                    android:layout_height="@dimen/DIMEN_90PX"
+                    android:layout_marginBottom="@dimen/DIMEN_40PX"
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:layout_marginTop="@dimen/DIMEN_20PX"
+                    android:background="@drawable/btn_search_selector"
+                    android:clickable="true"
+                    android:paddingBottom="@dimen/DIMEN_25PX"
+                    android:paddingLeft="@dimen/DIMEN_55PX"
+                    android:paddingRight="@dimen/DIMEN_55PX"
+                    android:paddingTop="@dimen/DIMEN_25PX"
+                    android:src="@drawable/btn_search" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/DIMEN_20PX" >
+
+            <com.xxdc.itask.widget.ListViewCompat
+                android:id="@+id/list_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:groupIndicator="@null"
+                android:divider="@null"
+                android:listSelector="@null"
+                android:scrollbars="none" >
+            </com.xxdc.itask.widget.ListViewCompat>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+</FrameLayout>

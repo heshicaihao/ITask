@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 登录 -->
+	<color name="user_name_color">#656565</color>
+	<color name="login_title_color">#2b61c0</color>
+	<color name="tilte_bg_color">#F5F5F5</color>
+	<color name="tabhost_bg_color">#cbe0eb</color>
+	<color name="blue">#179cdf</color>
+	<color name="gray">#808080</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="gray_l">#f2f2f2</color>
+	<color name="blue2">#CAEDF6</color>
+	<color name="black1">#323335</color>
+	<color name="blue1">#3bbce2</color>
+	<color name="blue_dan">#b0e7f8</color>
+	<color name="date_black">#979DA2</color>
+	<color name="orange_nomal">#FF8C00</color>
+	<color name="gray_nomal">#A8A8A8</color>
+	
+	<color name="green">#8FCC85</color>
+	
+	<!-- 分割线 -->
+	<color name="parting_line">#DCDCDC</color>
+	<!-- 颜色值 -->
+	<color name="t_oooooo">#000000</color>
+	<color name="t_9f9fa3">#9f9fa3</color>
+	<color name="t_fcfcfc">#fcfcfc</color>
+	<color name="t_5ECEF0">#5ECEF0</color>
+	<color name="gray_2">#F4F4F6</color>
+	<color name="bg_yellow">#FFE4B5</color>
+	<color name="gray_1">#EAEAEA</color>
+	<color name="transparent">#0000</color>
+	<color name="bg_zongse">#FF7F00</color>
+	
+	<drawable name="red">#F00</drawable> 
+	<drawable name="white">#FFF</drawable> 
+</resources>

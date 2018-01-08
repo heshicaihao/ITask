@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_title">
+        <item >乐差</item>
+        <item >个人</item>
+        <item >公司</item>
+        <item >我发出的</item>
+        <item >我收到的</item>
+        <item >我创建的</item>
+    </string-array>
+</resources>

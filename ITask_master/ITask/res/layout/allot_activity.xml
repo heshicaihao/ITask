@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/unused"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:background="@drawable/bg_titlebar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/fenpei"
+            android:textColor="@color/t_fcfcfc"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/unused1"
+        android:layout_below="@id/unused"
+        android:layout_margin="@dimen/DIMEN_20PX"
+        android:orientation="vertical" >
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="暂无分配人员名单"
+            android:id="@+id/empty_view"
+            android:visibility="gone"
+            android:textColor="@color/black1"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <GridView
+            android:id="@+id/gv_contact_allot"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DIMEN_300PX"
+            android:columnWidth="@dimen/DIMEN_200PX"
+            android:gravity="center_horizontal"
+            android:horizontalSpacing="@dimen/DIMEN_10PX"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/DIMEN_10PX" >
+        </GridView>
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scrollbars="@null" >
+
+            <RadioGroup
+                android:id="@+id/rb_user_groupname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <ListView
+            android:id="@+id/contact_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:divider="#57DAF6"
+            android:dividerHeight="@dimen/DIMEN_4PX" >
+        </ListView>
+
+        <ExpandableListView
+            android:id="@+id/ev_contact_allot_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:childIndicatorLeft="0dp"
+            android:divider="@drawable/line_contact"
+            android:dividerHeight="@dimen/DIMEN_1PX"
+            android:groupIndicator="@null"
+            android:visibility="gone" >
+        </ExpandableListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/unused1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:layout_alignParentBottom="true"
+        android:background="@color/t_fcfcfc" >
+
+        <TextView
+            android:id="@+id/tv_ok_allot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/t_oooooo"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </LinearLayout>
+
+</RelativeLayout>

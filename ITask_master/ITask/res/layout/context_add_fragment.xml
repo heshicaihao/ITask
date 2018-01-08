@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/unused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#54C7FC" >
+
+        <TextView
+            android:id="@+id/tv_cancle_context_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/DIMEN_30PX" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_80PX"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/context_add"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/DIMEN_40PX" />
+
+        <TextView
+            android:id="@+id/tv_save_context_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/DIMEN_30PX" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DIMEN_60PX"
+        android:layout_marginTop="@dimen/DIMEN_60PX"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_marginRight="@dimen/DIMEN_30PX"
+            android:layout_marginTop="@dimen/DIMEN_50PX"
+            android:layout_marginBottom="@dimen/DIMEN_50PX"
+            android:background="#776FB6E0"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/ll_stytle" >
+
+                <TextView
+                    style="@style/textview_stytle"
+                    android:text="@string/userName" />
+
+                <EditText
+                    android:id="@+id/et_userName_con_add"
+                    style="@style/edit_stytle"
+                    android:ems="11" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_stytle"
+                android:layout_marginTop="@dimen/DIMEN_20PX" >
+
+                <TextView
+                    style="@style/textview_stytle"
+                    android:text="@string/realName" />
+
+                <EditText
+                    android:id="@+id/et_realName_con_add"
+                    style="@style/edit_stytle"
+                    android:ems="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_stytle"
+                android:layout_marginTop="@dimen/DIMEN_20PX" >
+
+                <TextView
+                    style="@style/textview_stytle"
+                    android:text="@string/email_add" />
+
+                <EditText
+                    android:id="@+id/et_email_con_add"
+                    style="@style/edit_stytle"
+                    android:ems="25" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_stytle"
+                android:layout_marginTop="@dimen/DIMEN_20PX" >
+
+                <TextView
+                    style="@style/textview_stytle"
+                    android:text="@string/tel_add" />
+
+                <EditText
+                    android:id="@+id/et_tel_con_add"
+                    style="@style/edit_stytle"
+                    android:ems="12" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_stytle"
+                android:layout_marginTop="@dimen/DIMEN_20PX" >
+
+                <TextView
+                    style="@style/textview_stytle"
+                    android:text="@string/phone" />
+
+                <EditText
+                    android:id="@+id/et_phone_con_add"
+                    style="@style/edit_stytle"
+                    android:ems="11" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_stytle"
+                android:layout_marginTop="@dimen/DIMEN_20PX" >
+
+                <TextView
+                    style="@style/textview_stytle"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/photo" />
+
+                <ImageView
+                    android:id="@+id/iv_linkman"
+                    android:layout_width="@dimen/DIMEN_200PX"
+                    android:layout_height="@dimen/DIMEN_200PX"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/contacts" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tv_add_linkman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_50PX"
+                android:background="#54C7FC"
+                android:gravity="center" >
+
+                <TextView
+                    style="@style/textview_stytle"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:padding="@dimen/DIMEN_5PX"
+                    android:text="@string/add"
+                    android:textSize="@dimen/DIMEN_40PX" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

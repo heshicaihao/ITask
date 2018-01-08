@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_add_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@drawable/bg_1" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/create_task"
+            android:textColor="@color/login_title_color"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <!-- 父项 -->
+
+    <FrameLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:layout_below="@id/top_layout"
+        android:background="#7009" >
+
+        <TextView
+            android:id="@+id/parent_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:text="父项"
+            android:textColor="@color/login_title_color"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/task_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/voice_picture_layout"
+        android:layout_below="@+id/parent_layout"
+        android:gravity="left|top"
+        android:inputType="none" />
+
+    <LinearLayout
+        android:id="@+id/voice_picture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:layout_above="@+id/bottom_layout"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_1" >
+
+        <!-- 录音 -->
+
+        <ImageButton
+            android:id="@+id/voice_btn"
+            android:layout_width="@dimen/DIMEN_82PX"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_50PX"
+            android:background="#0000"
+            android:contentDescription="@null"
+            android:src="@drawable/microphone" />
+        <!-- 选择力图片 -->
+
+        <ImageButton
+            android:id="@+id/photo_img"
+            android:layout_width="@dimen/DIMEN_82PX"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_50PX"
+            android:layout_toRightOf="@id/voice_btn"
+            android:background="#0000"
+            android:contentDescription="@null"
+            android:src="@drawable/photo" />
+
+        <Button
+            android:id="@+id/add_sure_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:background="#0000"
+            android:contentDescription="@null"
+            android:text="@string/ok"
+            android:textColor="@color/login_title_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

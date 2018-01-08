@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/DIMEN_400PX"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_bord_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+
+    <TextView
+        style="@style/layout_bg"
+        android:background="#f2f2f2" />
+
+    <TextView
+        android:id="@+id/picture_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/DIMEN_20PX"
+        android:text="@string/delete_obj"
+        android:textSize="18sp"
+        android:textColor="#267dbd" />
+
+    <TextView
+        style="@style/layout_bg"
+        android:background="#f2f2f2" />
+
+    <TextView
+        android:id="@+id/picture_look"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/DIMEN_20PX"
+        android:text="@string/look_pic"
+        android:textSize="18sp"
+        android:textColor="#267dbd" />
+
+    <TextView
+        style="@style/layout_bg"
+        android:background="#f2f2f2" />
+
+</LinearLayout>

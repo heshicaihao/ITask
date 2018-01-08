@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_add_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible"
+    android:background="#eeee"
+    android:orientation="vertical" >
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/DIMEN_150PX"
+	    android:background="#0f0">
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/DIMEN_80PX"
+	        android:layout_gravity="bottom">
+	        <ImageView
+	            android:id="@+id/mic_img" 
+	            android:layout_width="@dimen/DIMEN_60PX"
+	            android:layout_height="match_parent"
+	            android:src="@drawable/microphone"
+	            android:contentDescription="@null"/>
+	        <ImageView
+	            android:id="@+id/picture_img" 
+	            android:layout_width="@dimen/DIMEN_60PX"
+	            android:layout_height="match_parent"
+	            android:contentDescription="@null"
+	            android:layout_alignParentRight="true"
+	            android:src="@drawable/microphone"/>
+	        
+	        <EditText 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_toRightOf="@id/mic_img"
+	            android:layout_toLeftOf="@id/picture_img"/>
+	        
+	    </RelativeLayout>
+	</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ITask</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- 登录 /注册 -->
+    <string name="email_phone">手机/邮箱</string>
+    <string name="real_name">真实姓名</string>
+    <string name="input_pwd">密码</string>
+    <string name="input_sure_pwd">确认密码</string>
+   
+    <string name="login">登录</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="register">注册</string>
+    <string name="user_not_null">用户名不能为空!</string>
+    <string name="realName_not_null">真实姓名不能为空!</string>
+    <string name="pwd_not_null">密码不能为空!</string>
+    <string name="pwd_entered_differ">两次输入的密码不一致!</string>
+    <string name="sign_faile">注册失败！</string>
+    <string name="load">加载更多</string>
+    <!-- xListView -->
+    <string name="xlistview_header_hint_normal">下拉加载</string>
+    <string name="xlistview_header_hint_ready">松开更新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="add_room_ing">正在加载群组...</string>
+
+    <!-- 首页 -->
+    <string name="lechai">乐差</string>
+    <string name="demo">中海油</string>
+    <string name="home">首页</string>
+    <string name="history">历史</string>
+    <string name="notepad">记事</string>
+    <string name="context">差友</string>
+    <string name="more">更多</string>
+    <string name="no_title">无主题</string>
+    <!-- 新建事项 -->
+    <string name="timer">提醒</string>
+    <string name="allot">分配</string>
+    <string name="notebook">记事本</string>
+    <string name="detail">详情</string>
+    <string name="ok">确定</string>
+    <string name="create_task">创建事项</string>
+    <string name="cancle1">&lt;&lt;取消</string>
+
+    <!-- 历史任务页面 -->
+    <string name="history_task">历史</string>
+    <string name="history_detail">详情</string>
+    <!-- 分配页面 -->
+    <string name="fenpei">分配</string>
+    <!-- 反馈页面 -->
+    <string name="feedback">反馈</string>
+    <!-- 上传图片 -->
+    <string name="picture_title">请选定照片</string>
+    <string name="picture_selector">我的照片</string>
+    <string name="takepicture">拍照</string>
+    <string name="delete_obj">删除</string>
+    <string name="look_pic">查看大图</string>
+    <string name="clear">取消</string>
+    <string name="save">保存</string>
+    <string name="editor">编辑</string>
+    <!-- 联系人列表 -->
+    <string name="contact">联系人</string>
+    <string name="contactDetail">联系人信息</string>
+    <string name="context_add">查找联系人</string>
+    <string name="context_details">联系人资料</string>
+    <string name="friend_apply">好友申请</string>
+    <string name="mobile">手机：</string>
+    <string name="email">邮箱：</string>
+    <string name="tel">办公电话：</string>
+    <string name="call_action">拨打电话</string>
+    <string name="message_action">发送短信</string>
+    <string name="count_message">你有5条好友申请, 点击查看</string>
+    <string name="test_name">Gray</string>
+    <string name="agree">同意</string>
+    <string name="add_message">附加信息:申请加我为好友</string>
+    <string name="no_apply">暂无好友申请 </string>
+    <string name="add_friend">添加好友 </string>
+    <!-- 添加记事本 -->
+    <string name="notebook_add">添加记事本</string>
+    <string name="title">请输入标题</string>
+    <string name="add_context">请输入内容</string>
+    <string name="create_note">创建</string>
+    <string name="note_hint">请输入要记录的内容吧!</string>
+    <string name="note_detail_tile">记事详情</string>
+    <!-- 添加联系人 -->
+    <string name="userName">用户昵称：</string>
+    <string name="realName">用户姓名：</string>
+    <string name="email_add">用户邮箱：</string>
+    <string name="tel_add">电话号码：</string>
+    <string name="phone">手机号码：</string>
+    <string name="user_groupName">所属部门：</string>
+    <string name="photo">选择头像：</string>
+    <string name="add">添加</string>
+    <string name="find">查找</string>
+    
+    <string name="stop">停止</string>
+    <string name="finish">完成</string>
+    <string name="input_real_name">请输入对方用户名</string>
+
+</resources>

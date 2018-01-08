@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bg_choice_2" android:state_checked="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/bg_choice_2" android:state_checked="true" android:state_pressed="false"/>
+    <item android:drawable="@drawable/bg_choice_2" android:state_checkable="true"></item>
+    <item android:drawable="@drawable/bg_choice_1" android:state_checked="false" android:state_pressed="false"/>
+    <item android:drawable="@drawable/bg_choice_1" android:state_pressed="false"></item>
+    <item android:drawable="@drawable/bg_choice_2" android:state_pressed="true" ></item>
+
+</selector>

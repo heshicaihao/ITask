@@ -1,0 +1,171 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+    -->
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="emptyTheme"></style>
+
+    <style name="MyAlertDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景色 -->
+    </style>
+
+    <style name="input_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/DIMEN_100PX</item>
+        <item name="android:layout_marginRight">@dimen/DIMEN_100PX</item>
+        <item name="android:layout_marginLeft">@dimen/DIMEN_100PX</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/selector_rectangle_bg</item>
+    </style>
+
+    <style name="input_img">
+        <item name="android:layout_width">@dimen/DIMEN_80PX</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+
+    <style name="input_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">#0000</item>
+        <item name="android:inputType">none</item>
+    </style>
+
+    <style name="input_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/DIMEN_100PX</item>
+        <item name="android:layout_marginRight">@dimen/DIMEN_100PX</item>
+        <item name="android:layout_marginLeft">@dimen/DIMEN_100PX</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#f4f4f4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_rectangle_1</item>
+    </style>
+
+    <!-- 高度为1的一条线 -->
+    <style name="layout_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/DIMEN_1PX</item>
+    </style>
+
+    <style name="MyCheck_Box" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- 分隔线 -->
+    <style name="view_for_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:layout_marginTop">@dimen/DIMEN_20PX</item>
+        <item name="android:layout_marginBottom">@dimen/DIMEN_20PX</item>
+        <item name="android:background">@drawable/line_contact</item>
+    </style>
+    <!-- 添加联系人 -->
+    <style name="ll_stytle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/DIMEN_20PX</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/DIMEN_50PX</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="edit_stytle">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:padding">@dimen/DIMEN_5PX</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/context_add_edi_shape</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#dcdcdc</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:hint">@string/input_real_name</item>
+        <item name="android:textSize">@dimen/DIMEN_30PX</item>
+    </style>
+
+    <style name="textview_stytle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/DIMEN_30PX</item>
+    </style>
+
+    <style name="top_dialog_style" parent="@android:style/Theme.Dialog">
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 背景色 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <!-- task列表左边图片样式 -->
+    <style name="task_item_left_img">
+        <item name="android:layout_width">@dimen/DIMEN_50PX</item>
+        <item name="android:layout_height">@dimen/DIMEN_50PX</item>
+        <item name="android:layout_marginLeft">@dimen/DIMEN_20PX</item>
+        <item name="android:layout_marginRight">@dimen/DIMEN_20PX</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+    
+    <style name="task_item_tool_img">
+        <item name="android:layout_width">@dimen/DIMEN_45PX</item>
+        <item name="android:layout_height">@dimen/DIMEN_45PX</item>
+        <item name="android:layout_marginLeft">@dimen/DIMEN_15PX</item>
+        <item name="android:layout_marginRight">@dimen/DIMEN_15PX</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+    
+    
+
+    <!-- 日期样式 -->
+    <style name="Widget.CalendarView.Custom" parent="android:Widget.CalendarView">
+        <item name="android:weekDayTextAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:dateTextAppearance">@android:style/TextAppearance.Large</item>
+    </style>
+
+    <style name="Theme.Custom" parent="@android:Theme">
+        <item name="android:calendarViewStyle">@style/Widget.CalendarView.Custom</item>
+    </style>
+
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/history_bg3"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_96PX"
+            android:background="@drawable/bg_1" >
+
+            <TextView
+                android:id="@+id/tv_history_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/feedback"
+                android:textColor="@color/login_title_color"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_marginRight="@dimen/DIMEN_30PX"
+            android:layout_marginTop="@dimen/DIMEN_10PX"
+            android:background="@drawable/historytask_item_selector"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/DIMEN_20PX" >
+
+            <TextView
+                android:id="@+id/tv_history_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/blue"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <com.xxdc.itask.view.XListView
+            android:id="@+id/list_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/DIMEN_10PX"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="@dimen/DIMEN_8PX"
+            android:paddingLeft="@dimen/DIMEN_30PX"
+            android:paddingRight="@dimen/DIMEN_30PX"
+            android:scrollbars="none" >
+        </com.xxdc.itask.view.XListView>
+
+        <LinearLayout
+            android:id="@+id/ll_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_240PX"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_marginRight="@dimen/DIMEN_30PX"
+            android:layout_marginTop="@dimen/DIMEN_2PX"
+            android:background="@drawable/historytask_item_shape"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/historytask_item_shape"
+                android:gravity="left|top"
+                android:hint="请输入您要反馈的内容"
+                android:padding="@dimen/DIMEN_10PX"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/DIMEN_10PX" >
+
+                <ImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="@dimen/DIMEN_40PX"
+                    android:layout_height="@dimen/DIMEN_40PX"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/camera_selector" />
+
+                <ImageView
+                    android:id="@+id/iv_mic"
+                    android:layout_width="@dimen/DIMEN_40PX"
+                    android:layout_height="@dimen/DIMEN_40PX"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/mic_selector" />
+
+                <ImageView
+                    android:id="@+id/iv_fujian"
+                    android:layout_width="@dimen/DIMEN_40PX"
+                    android:layout_height="@dimen/DIMEN_40PX"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/fujian_selector" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:background="@drawable/line_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_finish"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/DIMEN_60PX"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:padding="@dimen/DIMEN_10PX" >
+
+                    <Button
+                        android:id="@+id/btn_finish"
+                        android:layout_width="@dimen/DIMEN_40PX"
+                        android:layout_height="@dimen/DIMEN_40PX"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_choice_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DIMEN_40PX"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_marginStart="@dimen/DIMEN_10PX"
+                        android:layout_toEndOf="@+id/btn_finish"
+                        android:layout_toRightOf="@+id/btn_finish"
+                        android:gravity="center_vertical|left"
+                        android:singleLine="true"
+                        android:text="已完成" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_1PX"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/line_1" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_goback"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/DIMEN_60PX"
+                    android:layout_marginEnd="@dimen/DIMEN_60PX"
+                    android:layout_marginRight="@dimen/DIMEN_60PX"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:padding="@dimen/DIMEN_10PX" >
+
+                    <Button
+                        android:id="@+id/btn_goback"
+                        android:layout_width="@dimen/DIMEN_40PX"
+                        android:layout_height="@dimen/DIMEN_40PX"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_choice_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/DIMEN_40PX"
+                        android:layout_marginLeft="@dimen/DIMEN_10PX"
+                        android:layout_marginStart="@dimen/DIMEN_10PX"
+                        android:layout_toEndOf="@+id/btn_goback"
+                        android:layout_toRightOf="@+id/btn_goback"
+                        android:gravity="center_vertical|start"
+                        android:singleLine="true"
+                        android:text="退回" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_10PX"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/DIMEN_10PX" >
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="提交反馈"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

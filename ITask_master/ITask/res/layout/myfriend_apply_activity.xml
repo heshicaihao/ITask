@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/unused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#54C7FC" >
+
+        <TextView
+            android:id="@+id/tv_cancle_context_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/DIMEN_30PX" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_80PX"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/friend_apply"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/DIMEN_40PX" />
+
+        <TextView
+            android:id="@+id/tv_save_context_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/DIMEN_30PX" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:textColor="@color/gray"
+            android:id="@+id/empty_view"
+            android:textSize="@dimen/DIMEN_36PX"
+            android:text="@string/no_apply"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+
+            <ListView
+                android:id="@+id/friend_apply_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:divider="#57DAF6"
+                android:visibility="visible"
+                android:dividerHeight="@dimen/DIMEN_4PX"
+                android:scrollbars="@null" >
+            </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

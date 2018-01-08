@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/DIMEN_15PX"
+    android:layout_marginLeft="@dimen/DIMEN_20PX"
+    android:layout_marginRight="@dimen/DIMEN_20PX"
+    android:layout_marginTop="@dimen/DIMEN_15PX"
+    android:id="@+id/layout_note"
+    android:background="@drawable/message_bg" >
+
+    <TextView
+        android:id="@+id/tv_title_note_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/DIMEN_18PX"
+        android:layout_marginLeft="@dimen/DIMEN_26PX"
+        android:layout_marginTop="@dimen/DIMEN_18PX"
+        android:text="会议纪要"
+        android:textColor="@color/bg_zongse"
+        android:textSize="@dimen/DIMEN_35PX" />
+
+    <TextView
+        android:id="@+id/note_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:layout_toRightOf="@id/tv_title_note_item"
+        android:background="@drawable/icon_daijinquan_select_0"
+        android:gravity="center"
+        android:text="图"
+        android:textColor="@color/bg_zongse"
+        android:textSize="@dimen/DIMEN_18PX" />
+
+    <TextView
+        android:id="@+id/note_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/DIMEN_5PX"
+        android:layout_toRightOf="@id/note_img"
+        android:background="@drawable/icon_daijinquan_select_0"
+        android:gravity="center"
+        android:text="音"
+        android:textColor="@color/bg_zongse"
+        android:textSize="@dimen/DIMEN_18PX" />
+
+    <TextView
+        android:id="@+id/tv_time_note_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/DIMEN_18PX"
+        android:layout_marginRight="@dimen/DIMEN_50PX"
+        android:layout_marginTop="@dimen/DIMEN_18PX"
+        android:text="2014-01-03 11:00"
+        android:textColor="@color/t_9f9fa3"
+        android:textSize="@dimen/DIMEN_29PX" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/DIMEN_50PX"
+        android:layout_marginRight="@dimen/DIMEN_10PX"
+        android:layout_marginTop="@dimen/DIMEN_50PX"
+        android:background="@drawable/other_profile_item_photo_arrow_on"
+        android:contentDescription="@string/app_name" />
+    
+
+</RelativeLayout>

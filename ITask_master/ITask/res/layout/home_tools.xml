@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/home_task_item_selector"
+    android:visibility="visible" >
+
+    <!-- 定时器 -->
+
+    <LinearLayout
+        android:id="@+id/add_timer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_88PX"
+            android:layout_height="@dimen/DIMEN_88PX"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/home_task_add_timer_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/DIMEN_15PX"
+            android:text="@string/timer"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 回复/反馈 -->
+
+    <LinearLayout
+        android:id="@+id/reply_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_88PX"
+            android:layout_height="@dimen/DIMEN_88PX"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/home_task_add_feedback_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/DIMEN_15PX"
+            android:text="@string/feedback"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- 分配 -->
+
+    <LinearLayout
+        android:id="@+id/allot_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_88PX"
+            android:layout_height="@dimen/DIMEN_88PX"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/home_task_add_allot__selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/DIMEN_15PX"
+            android:text="@string/allot"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- 记事本 -->
+
+    <LinearLayout
+        android:id="@+id/note_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_88PX"
+            android:layout_height="@dimen/DIMEN_88PX"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/home_task_add_note_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/DIMEN_15PX"
+            android:text="@string/notebook"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- 明细
+
+    <LinearLayout
+        android:id="@+id/detail_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_88PX"
+            android:layout_height="@dimen/DIMEN_88PX"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/home_task_add_detail_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/DIMEN_15PX"
+            android:text="@string/detail"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+    </LinearLayout> -->
+
+</LinearLayout>

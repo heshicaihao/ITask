@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/history_bg3"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@drawable/bg_1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/history_detail"
+            android:textColor="@color/login_title_color"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/DIMEN_20PX"
+            android:background="@drawable/historytask_item_selector"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/historytask_item_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/DIMEN_30PX" >
+
+                <TextView
+                    android:id="@+id/tv_history_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="去银行办信用卡"
+                    android:textColor="@color/blue"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:background="@drawable/line_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/historytask_item_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/DIMEN_30PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分配人:"
+                    android:textColor="@color/blue1"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_Task_Sender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:singleLine="true"
+                    android:text="jack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:layout_marginLeft="@dimen/DIMEN_100PX"
+                android:background="@drawable/line_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/historytask_item_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/DIMEN_30PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提醒:"
+                    android:textColor="@color/blue1"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_Task_alert_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:singleLine="true"
+                    android:text="2014-03-12  15:00"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_50PX"
+                    android:layout_height="@dimen/DIMEN_50PX"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:src="@drawable/arrow_right_selector"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:layout_marginLeft="@dimen/DIMEN_100PX"
+                android:background="@drawable/line_2" />
+
+            <LinearLayout
+                android:id="@+id/ll_fenpei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/historytask_item_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/DIMEN_30PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分配给:"
+                    android:textColor="@color/blue1"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_Task_Do"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:singleLine="true"
+                    android:text="张三,李四"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_50PX"
+                    android:layout_height="@dimen/DIMEN_50PX"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:src="@drawable/arrow_right_selector"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:layout_marginLeft="@dimen/DIMEN_100PX"
+                android:background="@drawable/line_2" />
+
+            <LinearLayout
+                android:id="@+id/ll_Task_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/historytask_item_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/DIMEN_30PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="反馈详情:"
+                    android:textColor="@color/blue1"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_50PX"
+                    android:layout_height="@dimen/DIMEN_50PX"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:src="@drawable/btn_feedout_2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_50PX"
+                    android:layout_height="@dimen/DIMEN_50PX"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:src="@drawable/arrow_right_selector"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:layout_marginLeft="@dimen/DIMEN_100PX"
+                android:background="@drawable/line_2" />
+
+            <LinearLayout
+                android:id="@+id/ll_Task_notepad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/historytask_item_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/DIMEN_30PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="记事本"
+                    android:textColor="@color/blue1"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_50PX"
+                    android:layout_height="@dimen/DIMEN_50PX"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:src="@drawable/arrow_right_selector"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:layout_marginLeft="@dimen/DIMEN_100PX"
+                android:background="@drawable/line_2" />
+
+            <LinearLayout
+                android:id="@+id/ll_Task_fujian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/historytask_item_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/DIMEN_30PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="附件"
+                    android:textColor="@color/blue1"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_voice"
+                    android:layout_width="@dimen/DIMEN_50PX"
+                    android:layout_height="@dimen/DIMEN_50PX"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:src="@drawable/voice_selector"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1PX"
+                android:layout_marginLeft="@dimen/DIMEN_100PX"
+                android:layout_marginStart="@dimen/DIMEN_100PX"
+                android:background="@drawable/line_2" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                android:layout_marginRight="@dimen/DIMEN_20PX"
+                android:id="@+id/mRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_140PX"
+                android:background="@drawable/historytask_item_shape"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:id="@+id/ll_Task_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/historytask_item_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/DIMEN_20PX"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_weight="1.0"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/history_bg3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_weight="1.0"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/history_bg3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_100PX"
+                    android:layout_weight="1.0"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/history_bg3" />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/DIMEN_50PX"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:src="@drawable/voice_selector"
+                    android:text="@string/more"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
